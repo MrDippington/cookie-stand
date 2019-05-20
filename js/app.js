@@ -6,7 +6,7 @@
 */
 
 // eslint-disable-next-line no-unused-vars
-var storeList = document.getElementById('store-list');
+var storeList = document.getElementById('store-list'); 
 var hoursOfOperation = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
 
 var firstAndPike = {
@@ -15,6 +15,7 @@ var firstAndPike = {
   maxCust: 65,
   avgCookieSale: 6.3,
   hours: ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'],
+  hoursTotal: '0',
   getRandomArbitrary: function getRandomArbitrary(minCust, maxCust){ // eslint-disable-next-line no-unused-vars
     return Math.random() * (maxCust - minCust) + minCust;
   },
@@ -25,12 +26,16 @@ var liEl = document.createElement('li');
 liEl.textContent = firstAndPike.location;
 storeList.appendChild(liEl);
 
-for (var i = 0; i < hoursOfOperation.length; i++){
+for (var i = 0; i < hoursOfOperation.length; i++, firstAndPike.hoursTotal++){ // hours.total why the total is added up
   liEl = document.createElement('li');
   liEl.textContent = firstAndPike.hours[i] + ' ' + (Math.round(firstAndPike.getRandomArbitrary(firstAndPike.minCust, firstAndPike.maxCust)));
   storeList.appendChild(liEl);
 
 }
+
+liEl = document.createElement('li');
+liEl.textContent = 'Total ' + firstAndPike.hoursTotal;
+storeList.appendChild(liEl);
 
 /*
 *********** SeaTac Airport ***********
@@ -42,6 +47,7 @@ var seaTac = {
   maxCust: 24,
   avgCookieSale: 1.2,
   hours: ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'],
+  hoursTotal: '0',
   getRandomArbitrary: function getRandomArbitrary(minCust, maxCust){ // eslint-disable-next-line no-unused-vars
     return Math.random() * (maxCust, minCust) + minCust;
   }
@@ -58,6 +64,11 @@ for (i = 0; i < hoursOfOperation.length; i++){
   storeList.appendChild(liEl);
 
 }
+
+liEl = document.createElement('li');
+liEl.textContent = 'Total ' + seaTac.hoursTotal;
+storeList.appendChild(liEl);
+
 /*
 *********** Seattle Center ***********
 */
@@ -68,6 +79,7 @@ var seaCenter = {
   maxCust: 38,
   avgCookieSale: 3.7,
   hours: ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'],
+  hoursTotal: '0',
   getRandomArbitrary: function getRandomArbitrary(minCust, maxCust){ // eslint-disable-next-line no-unused-vars
     return Math.random() * (maxCust, minCust) + minCust;
   }
@@ -84,6 +96,11 @@ for (i = 0; i < hoursOfOperation.length; i++){
   storeList.appendChild(liEl);
 
 }
+
+liEl = document.createElement('li');
+liEl.textContent = 'Total ' + seaCenter.hoursTotal;
+storeList.appendChild(liEl);
+
 /*
 *********** Capitol Hill ***********
 */
@@ -94,6 +111,7 @@ var capHill = {
   maxCust: 38,
   avgCookieSale: 2.3,
   hours: ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'],
+  hoursTotal: '0',
   getRandomArbitrary: function getRandomArbitrary(minCust, maxCust){ // eslint-disable-next-line no-unused-vars
     return Math.random() * (maxCust, minCust) + minCust;
   }
@@ -110,6 +128,11 @@ for (i = 0; i < hoursOfOperation.length; i++){
   storeList.appendChild(liEl);
 
 }
+
+liEl = document.createElement('li');
+liEl.textContent = 'Total ' + capHill.hoursTotal;
+storeList.appendChild(liEl);
+
 /*
 *********** Alki ***********
 */
@@ -120,6 +143,7 @@ var alki = {
   maxCust: 16,
   avgCookieSale: 4.6,
   hours: ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'],
+  hoursTotal: '0',
   getRandomArbitrary: function getRandomArbitrary(minCust, maxCust){ // eslint-disable-next-line no-unused-vars
     return Math.random() * (maxCust, minCust) + minCust;
   }
@@ -137,3 +161,7 @@ for (i = 0; i < hoursOfOperation.length; i++){
   storeList.appendChild(liEl);
 
 }
+
+liEl = document.createElement('li');
+liEl.textContent = 'Total ' + alki.hoursTotal;
+storeList.appendChild(liEl);
