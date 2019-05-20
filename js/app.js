@@ -27,7 +27,7 @@ storeList.appendChild(liEl);
 
 for (var i = 0; i < hoursOfOperation.length; i++){
   liEl = document.createElement('li');
-  liEl.textContent = firstAndPike.hours[i];
+  liEl.textContent = firstAndPike.hours[i] + ' ' + (Math.round(firstAndPike.getRandomArbitrary(firstAndPike.minCust, firstAndPike.maxCust)));
   storeList.appendChild(liEl);
 
 }
@@ -54,7 +54,7 @@ storeList.appendChild(liEl);
 
 for (i = 0; i < hoursOfOperation.length; i++){
   liEl = document.createElement('li');
-  liEl.textContent = seaTac.hours[i];
+  liEl.textContent = seaTac.hours[i] + ' ' + (Math.round(seaTac.getRandomArbitrary(seaTac.minCust, seaTac.maxCust)));
   storeList.appendChild(liEl);
 
 }
@@ -80,7 +80,7 @@ storeList.appendChild(liEl);
 
 for (i = 0; i < hoursOfOperation.length; i++){
   liEl = document.createElement('li');
-  liEl.textContent = seaCenter.hours[i];
+  liEl.textContent = seaCenter.hours[i] + ' ' + (Math.round(seaCenter.getRandomArbitrary(seaCenter.minCust, seaCenter.maxCust)));
   storeList.appendChild(liEl);
 
 }
@@ -106,7 +106,7 @@ storeList.appendChild(liEl);
 
 for (i = 0; i < hoursOfOperation.length; i++){
   liEl = document.createElement('li');
-  liEl.textContent = capHill.hours[i];
+  liEl.textContent = capHill.hours[i] + ' ' + (Math.round(capHill.getRandomArbitrary(capHill.minCust, capHill.maxCust)));
   storeList.appendChild(liEl);
 
 }
@@ -133,7 +133,7 @@ storeList.appendChild(liEl);
 
 for (i = 0; i < hoursOfOperation.length; i++){
   liEl = document.createElement('li');
-  liEl.textContent = alki.hours[i];
+  liEl.textContent = alki.hours[i] + ' ' + (Math.round(alki.getRandomArbitrary(alki.minCust, alki.maxCust)));
   storeList.appendChild(liEl);
 
 }
