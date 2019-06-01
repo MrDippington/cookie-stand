@@ -1,3 +1,77 @@
-#table {
-    border: 1px solid #000;
+
+body {
+    /* background-color: rgb(255, 187, 127); */
+    background-image: linear-gradient(to bottom, white, rgb(255, 187, 127));
+    
+
+    border: 10px solid transparent;
+    padding: 15px;
+    
+    
 }
+
+
+
+table {
+    border: 2px solid #000;
+    border-collapse: separate;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+th, td {
+    width: 50px;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    text-shadow: 0 2px 2px rgb(255, 36, 36);
+    text-align: center;
+    
+}
+
+form {
+    font-family: 'Ranga', cursive;
+    width: 50px;
+    padding: 0 0 40px;
+    position: relative;
+    
+}
+
+
+
+#salmon {
+    /* display: grid; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    opacity: 0.2;
+    
+     
+}
+
+#chinook {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    opacity: 0.5;
+}
+
+#family {
+    float: left;
+    width: 30em;
+    margin: 20px 30px 30px 30px;
+
+}
+
+#shirt {
+    
+    width: 20em;
+}
+
+p {
+    font-family: 'Ranga', cursive;
+    font-size: 21px;
+}
+

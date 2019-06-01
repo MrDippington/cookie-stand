@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 'use strict';
 // var tableEl = document.getElementById('table');
 
@@ -58,7 +59,7 @@ Salmon.prototype.render = function(){
   trEl.appendChild(thEl);
 
   tableEl.appendChild(trEl);
-}
+};
   
 var firstAndPike = new Salmon('1st & Pike', 23, 65, 6.3);
 var seaTacAirport = new Salmon('SeaTac Airport', 3, 24, 1.2);
@@ -81,13 +82,13 @@ function renderHeader(){
   trEl.appendChild(thEl);
 
   for(var i = 0; i < hoursOfOperation.length; i++){
-    var thEl = document.createElement('th');
+    thEl = document.createElement('th');
     var text = document.createTextNode(`${hoursOfOperation[i]}`);
     thEl.appendChild(text);
     trEl.appendChild(thEl);
   }
 
-  var thEl = document.createElement('th');
+  thEl = document.createElement('th');
   thEl.textContent = 'Totals';
   trEl.appendChild(thEl);
 }
